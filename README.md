@@ -29,4 +29,16 @@ GraphicFramework是为了便于编写Demo代码，而实现的DX12框架，该�
 <div align=left><img src="https://github.com/KaiYuan-Z/DirectX12Code/blob/master/ReadMeImage/RayTracingAO_RasterizerGBuffer_Halton_Cosine.png" width="200"/> <img src="https://github.com/KaiYuan-Z/DirectX12Code/blob/master/ReadMeImage/TemporalRayTracingAO_CrossroadDemo2.png" width="200"/> <img src="https://github.com/KaiYuan-Z/DirectX12Code/blob/master/ReadMeImage/TemporalRayTracingAO_CrossroadDemo1.png" width="200"/></div></div>
 
 ## 4. Resources
-整个项目使用的模型和贴图等资源文件比较大，超过了github提供的lfs免费空间的限制，所以需要另外下载：https://pan.baidu.com/s/1Frg84tr9t-QHPqb2UhvYFw ，提取码：1234。下载完毕后直接将Resources.zip解压到DirectX12Code根目录即可。
+整个项目使用的模型和贴图等资源文件比较大，超过了github提供的lfs免费空间的限制，所以需要另外下载：https://pan.baidu.com/s/1Frg84tr9t-QHPqb2UhvYFw ，提取码：1234。下载完毕后直接将Resources.zip解压到DirectX12Code根目录即可。正确路径如下：
+
+``` 
+  DirectX12Code
+    ├─GraphicFramework
+    ├─RasterizerSamples
+    ├─RaytracingSamples
+    └─Resources
+        ├─Models
+        └─Textures
+```
+
+ 
