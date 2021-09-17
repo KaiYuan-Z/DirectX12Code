@@ -56,7 +56,7 @@
 * DirectX 版本：12
 * 是否开启光追：是
 * 引用Lib：Core、Effects、RaytracingUtility
-* 用途：毕设的Demo场景，具体介绍可参看[毕设论文.PDF](https://github.com/KaiYuan-Z/DirectX12Code/tree/master/RaytracingSamples/TemporalRayTracingAO_002/PDF)）
+* 用途：毕设的Demo场景，具体介绍可参看[毕设论文.PDF](https://github.com/KaiYuan-Z/DirectX12Code/tree/master/RaytracingSamples/TemporalRayTracingAO_002/PDF)，Demo视频可参看[Demo演示](https://pan.baidu.com/s/1R9pzV-kC0yY_CyeSSJm1kw)
 * 说明：<br>
 采样：历史复用低时8 spp，历史复用中等时4 spp，历史复用高时1 spp <br>
 F1：展示当前帧的AO <br>
