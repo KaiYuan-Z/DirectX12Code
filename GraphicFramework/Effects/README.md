@@ -7,6 +7,7 @@
 
 ## 简述
 * Effects是常用图形算法库，在这个库中常用的图形算法都被封装成了一个个单独的Effect，以方便在各个Demo程序间复用。<br>
+* 封装Effect库，除了方便复用之外，也是为了让Core足够精简、稳定和灵活，省得让Core整合进太多东西，导致其学习、维护以及Debug的成本过高。<br>
 * 使用Effects中的算法时，只需要引用Effects的Lib，然后包含对应Effect的头文件即可。<br>
 * Effect已经将一个算法的绘制逻辑和Shader都封装好，不需要Demo程序再编写算法相关的Shader或Render代码。<br>
 * 在Demo中使用Effect时，一般都是在Init阶段初始化一下Effect对象，然后在每帧直接调用Effect的Render函数即可。<br>

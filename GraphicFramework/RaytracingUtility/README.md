@@ -1,6 +1,7 @@
 # RaytracingUtility说明
 * RaytracingUtility是为Core提供光线追踪支持的扩展库，若Demo程序需要使用光线追踪特性，则需要同时引用Core和RaytracingUtility两个库。
-* 将光追代码从Core中提出来主要是为了：（1）保持Core的简洁性，避免将用不上的光追代码，带入到非光追的程序中。（2）避免因引入光追功能，而导致原有渲染管线的接口和使用方式发生改变。
+* 将光追代码从Core中提出来主要考虑到：（1）保持Core的简洁性，避免将用不上的光追代码，带入到非光追的程序中。（2）避免因引入光追功能，而导致原有渲染管线的接口和使用方式发生改变。（3）DXR本就是DX12的扩展，光追的Device和CommandList都可通过QueryInterface的方式从已创建的Device和CommandList中获取（当然直接创建也行，只是对于扩展库来说，用QueryInterface更方便），这样Core只需提供非光追的Device和CommandList给RaytracingUtility即可，而Core不需要包含任何光追代码。
+
 * 由于DXR的光追管线和传统的DX12渲染管线差别有点大，因此在介绍RaytracingUtility实现框架之前，需要先对DXR的光追管线进行简要介绍，以便能更好的理解RaytracingUtility各个部分的作用。
 
 <br>
