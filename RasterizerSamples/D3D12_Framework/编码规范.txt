@@ -1,0 +1,14 @@
+1.变量
+	局部变量：首字母小写（如：XMFLOAT3 camPos;）
+	全局变量：前面加"g_"，其余同局部变量(如：XMFLOAT3 g_camPos;)
+	成员变量：前面加"m_"，其余同局部变量(如：XMFLOAT3 m_camPos;)
+
+2.函数
+	非成员函数：首字母大写，参数首字母小写（如：void SetCameraPosition(XMFLOAT3& pos) {...}）
+	公有成员函数：同非成员函数（如：void CCamera::SetCameraPosition(XMFLOAT3& pos) {...}）
+	保护成员函数：函数名前加"_"，其余同公有成员函数（如：void CCamera::_SetCameraPosition(XMFLOAT3& pos) {...}）
+	私有成员函数：函数名前加"__"，其余同公有成员函数（如：void CCamera::__SetCameraPosition(XMFLOAT3& pos) {...}）
+
+3.命名空间
+	.h文件不能使用"using namespace"
+	.cpp文件可以使用"using namespace"

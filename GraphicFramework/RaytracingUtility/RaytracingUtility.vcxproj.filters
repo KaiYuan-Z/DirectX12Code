@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{65e5e362-8cda-4cfb-b43a-4924c05d7535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{0c9f0500-1a26-47a8-a2ab-b0bfa07c827a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderUtility">
+      <UniqueIdentifier>{84592165-8aa7-437c-be25-90d9a04a0cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\RaytracingScene">
+      <UniqueIdentifier>{536dbe0c-fa74-4d99-9965-4f4ae9ac5c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\RaytracingAccelerationStructure">
+      <UniqueIdentifier>{1a18208f-d3cb-42d3-b94d-daadcb11d0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\RaytracingPipeline">
+      <UniqueIdentifier>{77b6a06d-b38d-4ed7-9980-cf7d257c20ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\Common">
+      <UniqueIdentifier>{96141d1d-9554-4ae9-a302-ca2fa7f41203}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BottomLevelAccelerationStructure.cpp">
+      <Filter>SourceCode\RaytracingAccelerationStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="TopLevelAccelerationStructure.cpp">
+      <Filter>SourceCode\RaytracingAccelerationStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingSceneRenderHelper.cpp">
+      <Filter>SourceCode\RaytracingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingScene.cpp">
+      <Filter>SourceCode\RaytracingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingDispatchRaysDescriptor.cpp">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingPipelineStateObject.cpp">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingShaderTable.cpp">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingPipelineUtility.cpp">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\d3d12.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\d3d12_1.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\d3d12video.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\d3dx12.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dxcapi.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\D3D12RaytracingHelpers.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomLevelAccelerationStructure.h">
+      <Filter>SourceCode\RaytracingAccelerationStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="TopLevelAccelerationStructure.h">
+      <Filter>SourceCode\RaytracingAccelerationStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingInstanceDesc.h">
+      <Filter>SourceCode\RaytracingAccelerationStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingSceneRenderHelper.h">
+      <Filter>SourceCode\RaytracingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingScene.h">
+      <Filter>SourceCode\RaytracingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingBase.h">
+      <Filter>SourceCode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingDispatchRaysDescriptor.h">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingPipelineStateObject.h">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingShaderTable.h">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingPipelineUtility.h">
+      <Filter>SourceCode\RaytracingPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\halton_enum.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\halton_sampler.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShaderUtility\RaytracingSceneRenderHelper.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\RaytracingUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+  </ItemGroup>
+</Project>

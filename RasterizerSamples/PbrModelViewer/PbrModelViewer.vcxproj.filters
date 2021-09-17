@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{3f135363-6bd7-4e6b-8273-73955134e10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{3e4b9730-62fb-4e7f-b7ea-ac15cf66a510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0848e7f3-0114-470e-b79e-4ae10c4cd4e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\ModelViewerVS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\ModelViewerPS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="PbrModelViewer.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PbrModelViewer.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="scene.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

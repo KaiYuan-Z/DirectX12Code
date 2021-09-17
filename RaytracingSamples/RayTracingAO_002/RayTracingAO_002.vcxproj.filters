@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{1cfcd61f-ed91-4f62-8214-5b26ed7d6537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{c756c10f-a392-4c53-83c8-c4ede7d6aeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{618baf95-b97f-4efd-a151-2640c25c33de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="scene.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\AoTracing.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracingAO.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RayTracingAO.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Shader\RandomNumberGenerator.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Shaders\BlurEffect">
+      <UniqueIdentifier>{f0641ad7-5cd4-425d-bbfa-d503a4654b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\GBufferEffect">
+      <UniqueIdentifier>{2a3e1db2-02c8-45fd-afc3-e67f536eb55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\ImageEffect">
+      <UniqueIdentifier>{792f9c14-e08d-4a9f-a9f6-ebf1828513a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SimpleAccumEffect">
+      <UniqueIdentifier>{a6fdc827-1cfa-4a43-8b46-eff175e0877e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SsaoEffect">
+      <UniqueIdentifier>{f0b1f6ef-ef58-4e07-8b58-d89edfaaea4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DeferredShadingPBREffect">
+      <UniqueIdentifier>{a1c12bae-1939-4587-9952-08ec146d74d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\AccumulationEffect">
+      <UniqueIdentifier>{34a35022-9801-492e-a9b0-f7fb9fa44c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\BlurEffect\RGBA">
+      <UniqueIdentifier>{0bd3e54f-fafb-4420-b0eb-8257498750d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\BlurEffect\RED">
+      <UniqueIdentifier>{54e32cfb-284d-4226-b115-4c6fec476dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\MarkDynamicEffect">
+      <UniqueIdentifier>{cf48f865-b8bb-49f4-885c-4c8933ee8c91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\MeanVarianceEffect">
+      <UniqueIdentifier>{294cff8d-0a68-41c1-a896-729561538a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\CalcAoDiff">
+      <UniqueIdentifier>{0fe4d9ed-66d9-427b-b1d2-23dd655d5f17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\AtrousWaveletTransfromBlurEffect">
+      <UniqueIdentifier>{f204305f-fd24-45f7-a1f5-f05362e69c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\AtrousWaveletTransfromBlurEffect\Red">
+      <UniqueIdentifier>{85bc39a6-392e-4166-9d79-590e40be50cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\CalculatePartialDerivativesEffect">
+      <UniqueIdentifier>{7426ceb4-c223-4bac-acab-aad48a8ad146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\BilateralBlurEffect">
+      <UniqueIdentifier>{5e4f3d00-6d7c-4f8f-9dc3-0b3aadf83c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\BilateralBlurEffect\RED">
+      <UniqueIdentifier>{54c8774d-2566-47e8-8493-955cc94924d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DownSampleEffect">
+      <UniqueIdentifier>{7608f918-e56d-43b6-832f-e8cdb26d5c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DownSampleEffect\RED">
+      <UniqueIdentifier>{c9eaddd5-88f7-4e49-8bc5-9e3e5f72e0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DownSampleEffect\RG">
+      <UniqueIdentifier>{9974d751-420b-427d-a8c8-11a9213d116c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{d0fcecc1-efd1-4d4c-a960-bcfb6bda9deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DecodeNormalEffect">
+      <UniqueIdentifier>{6e992453-c546-4da1-9a1b-64c90a251a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\TAA">
+      <UniqueIdentifier>{cced7f20-2dc5-463e-a657-5f46416760f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\FXAA">
+      <UniqueIdentifier>{edc08a00-047c-4c83-a663-73ada2a8268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\ShadowMap">
+      <UniqueIdentifier>{346bcc69-ed13-43c4-b3be-9ff9cc34650f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SkyEffect">
+      <UniqueIdentifier>{86874bdc-2000-4155-88e4-5cbc6e073039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{4737a69f-7088-448a-ac51-4a312ffb2f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bin">
+      <UniqueIdentifier>{0f48bc80-869a-46d6-a8e8-5bb3d5fcf0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\RayTracedAoAccumEffect">
+      <UniqueIdentifier>{14fd0e48-02ee-4801-b41b-baba78270c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\RayTracedAoTemporalSupersamplingEffect">
+      <UniqueIdentifier>{ada391a3-05c8-47b8-8024-481745e02ffe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BlurEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracedAoAccumulationEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleAccumulationEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SsaoEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="GBufferEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SDFDeferredShadingPBREffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="TemporalEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AccumulationEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AccumulationEffectTestID.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkDynamicEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanVarianceEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcAoDiffEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AtrousWaveletTransfromBlurEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracedAoTemporalSupersamplingEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="PartialDerivativesEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="BilateralBlurEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="DownSampleEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="HBAOPlusEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeNormalEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="FxaaEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowMapEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryOnlyGBufferEffect.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlurEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracedAoAccumulationEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SsaoEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="GBufferEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SDFDeferredShadingPBREffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="TemporalEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AccumulationEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AccumulationEffectTestID.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleAccumulationEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkDynamicEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanVarianceEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcAoDiffEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AtrousWaveletTransfromBlurEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracedAoTemporalSupersamplingEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="PartialDerivativesEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="BilateralBlurEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="DownSampleEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="HBAOPlusEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GFSDK_SSAO.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeNormalEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="FxaaEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMapEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryOnlyGBufferEffect.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\ImageEffectRedPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectRgbaPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectSsaaRedPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectSsaaRgbaPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectVS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SsaoEffectPS.hlsl">
+      <Filter>Shaders\SsaoEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SsaoEffectVS.hlsl">
+      <Filter>Shaders\SsaoEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SimpleAccumulationEffectRedPS.hlsl">
+      <Filter>Shaders\SimpleAccumEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SimpleAccumulationEffectRedVS.hlsl">
+      <Filter>Shaders\SimpleAccumEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AccumulationEffectVS.hlsl">
+      <Filter>Shaders\AccumulationEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AccumulationEffectAccumMapPS.hlsl">
+      <Filter>Shaders\AccumulationEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GBufferEffectVS.hlsl">
+      <Filter>Shaders\GBufferEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SDFDeferredShadingPBREffectPS.hlsl">
+      <Filter>Shaders\DeferredShadingPBREffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SDFDeferredShadingPBREffectVS.hlsl">
+      <Filter>Shaders\DeferredShadingPBREffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AccumulationEffectAccumRedPS.hlsl">
+      <Filter>Shaders\AccumulationEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AccumulationEffectAccumMapPSTestID.hlsl">
+      <Filter>Shaders\AccumulationEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalculateMeanVarianceCS.hlsl">
+      <Filter>Shaders\MeanVarianceEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalculateMeanCS.hlsl">
+      <Filter>Shaders\MeanVarianceEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalculateVarianceCS.hlsl">
+      <Filter>Shaders\MeanVarianceEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalcAoDiff.hlsl">
+      <Filter>Shaders\CalcAoDiff</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownsampleAoDiffCS.hlsl">
+      <Filter>Shaders\CalcAoDiff</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectAccumMapPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba15x15CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba13x13CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba11x11CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba9x9CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba7x7CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba5x5CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRgba3x3CS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed15x15CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed13x13CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed11x11CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed9x9CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed7x7CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed5x5CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlurEffectRed3x3CS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AtrousWaveletTransfromBlurEffectRed3x3CS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AtrousWaveletTransfromBlurEffectRed5x5CS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AtrousWaveletTransfromBlurEffectRed7x7CS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AtrousWaveletTransfromBlurEffectRed9x9CS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AtrousWaveletTransfromBlurEffectRed11x11CS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoAccumulationEffectMixBluredAoCS.hlsl">
+      <Filter>Shaders\RayTracedAoAccumEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoAccumulationEffectAccumMapCS.hlsl">
+      <Filter>Shaders\RayTracedAoAccumEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoAccumulationEffectAccumAoCS.hlsl">
+      <Filter>Shaders\RayTracedAoAccumEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoTemporalSupersamplingEffectBlendWithCurrentFrameCS.hlsl">
+      <Filter>Shaders\RayTracedAoTemporalSupersamplingEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoTemporalSupersamplingEffectReverseReprojectCS.hlsl">
+      <Filter>Shaders\RayTracedAoTemporalSupersamplingEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayTracedAoTemporalSupersamplingEffectMixBluredAoCS.hlsl">
+      <Filter>Shaders\RayTracedAoTemporalSupersamplingEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalculatePartialDerivativesViaCentralDifferencesCS.hlsl">
+      <Filter>Shaders\CalculatePartialDerivativesEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed3x3CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed5x5CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed7x7CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed9x9CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed11x11CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed13x13CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\BilateralBlurEffectRed15x15CS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\CalcAoDiffTest.hlsl">
+      <Filter>Shaders\CalcAoDiff</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRg2x2CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RG</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRg3x3CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RG</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRg4x4CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RG</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRed2x2CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRed3x3CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DownSampleEffectRed4x4CS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RED</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\DecodeNormalCS.hlsl">
+      <Filter>Shaders\DecodeNormalEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\MarkDynamicEffectPS.hlsl">
+      <Filter>Shaders\MarkDynamicEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\MarkDynamicEffectVS.hlsl">
+      <Filter>Shaders\MarkDynamicEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AoDiffCS.hlsl">
+      <Filter>Shaders\CalcAoDiff</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\TAAEffectVS.hlsl">
+      <Filter>Shaders\TAA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\TAAEffectPS.hlsl">
+      <Filter>Shaders\TAA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GBufferEffectPS.hlsl">
+      <Filter>Shaders\GBufferEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\FxaaEffectPS.hlsl">
+      <Filter>Shaders\FXAA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\FxaaEffectVS.hlsl">
+      <Filter>Shaders\FXAA</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ImageEffectDynamicMarkPS.hlsl">
+      <Filter>Shaders\ImageEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ShadowMapEffectPS.hlsl">
+      <Filter>Shaders\ShadowMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ShadowMapEffectVS.hlsl">
+      <Filter>Shaders\ShadowMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SkyEffectPS.hlsl">
+      <Filter>Shaders\SkyEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SkyEffectVS.hlsl">
+      <Filter>Shaders\SkyEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GeometryOnlyGBufferEffectPS.hlsl">
+      <Filter>Shaders\GBufferEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GeometryOnlyGBufferEffectVS.hlsl">
+      <Filter>Shaders\GBufferEffect</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\DownSampleEffectRgUtilCS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RG</Filter>
+    </None>
+    <None Include="Shaders\DownSampleEffectRedUtilCS.hlsl">
+      <Filter>Shaders\DownSampleEffect\RED</Filter>
+    </None>
+    <None Include="Shaders\AtrousWaveletTransfromBlurEffectRedUtilCS.hlsl">
+      <Filter>Shaders\AtrousWaveletTransfromBlurEffect\Red</Filter>
+    </None>
+    <None Include="Shaders\BilateralBlurEffectRedUtilCS.hlsl">
+      <Filter>Shaders\BilateralBlurEffect\RED</Filter>
+    </None>
+    <None Include="Shaders\BlurEffectRedUtilCS.hlsl">
+      <Filter>Shaders\BlurEffect\RED</Filter>
+    </None>
+    <None Include="Shaders\BlurEffectRgbaUtilCS.hlsl">
+      <Filter>Shaders\BlurEffect\RGBA</Filter>
+    </None>
+    <None Include="Shaders\CalculateMeanVarianceUtilCS.hlsl">
+      <Filter>Shaders\MeanVarianceEffect</Filter>
+    </None>
+    <None Include="Bin\GFSDK_SSAO_D3D12.win64.dll">
+      <Filter>Bin</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Lib\GFSDK_SSAO_D3D12.win64.lib">
+      <Filter>Lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

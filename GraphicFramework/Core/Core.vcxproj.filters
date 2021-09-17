@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GraphicsCore">
+      <UniqueIdentifier>{9f299711-5818-486b-8c04-92391b1d6785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\CommandManager">
+      <UniqueIdentifier>{0c284992-e9a5-484a-a677-a7f32aeb8e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GUI">
+      <UniqueIdentifier>{b11598c7-1560-4383-8271-6ad328a94fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GUI\ImGui">
+      <UniqueIdentifier>{8ffcd8e6-7cd2-4b1d-9d18-25e513515c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects">
+      <UniqueIdentifier>{fbc2d99f-387c-4756-9cb0-25083e599695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Scene">
+      <UniqueIdentifier>{8036e069-ae1b-44b3-9f09-1d52f656938a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Cameras">
+      <UniqueIdentifier>{10b2cc77-fd13-412b-a6a1-47a494923b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Render">
+      <UniqueIdentifier>{7c5f5f24-8ea9-4baa-b2d8-2a04111b124a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Render\Common">
+      <UniqueIdentifier>{f805fe4b-2cd2-4f5f-956a-c053e9bb3c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Grass">
+      <UniqueIdentifier>{da76d8f2-761c-427e-b792-280af080a741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Grass\Shader">
+      <UniqueIdentifier>{5ca314cf-61bf-4582-b247-7d932555d80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderUtility">
+      <UniqueIdentifier>{065dc66b-7494-4593-a550-52d1f499f48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderUtility\SceneRender">
+      <UniqueIdentifier>{cf5b36f4-2c2e-468d-8387-e3acee43ac1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{4a6b483f-0ebc-4245-ab03-98c9438468b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources">
+      <UniqueIdentifier>{24db89d8-cd27-4b4d-a152-5bc7711aaf25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources\GPUBuffer">
+      <UniqueIdentifier>{32c9720b-3c82-4ab0-b8e3-2d755c512ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources\PixelBuffer">
+      <UniqueIdentifier>{64cdb48b-4261-4a1b-8c29-6a4f5863743f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer">
+      <UniqueIdentifier>{8578dc5b-f06f-4837-890a-d25f164cfaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources\Texture">
+      <UniqueIdentifier>{6499f597-b2f0-4d3e-a051-8708a2dfedc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GraphicsCore">
+      <UniqueIdentifier>{3345851e-5cb5-463e-a025-7a6ed69731fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Descriptors">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="SceneAndObjects\Boundings">
+      <UniqueIdentifier>{33016c20-fcd3-4f37-9d33-01f241ec7e33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Lights">
+      <UniqueIdentifier>{218e1f7c-6f80-465d-8766-630a5b5e9186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Models">
+      <UniqueIdentifier>{f338cf97-9a5d-4a66-a322-fa7d2bfa32f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneAndObjects\Models\ModelInstance">
+      <UniqueIdentifier>{7aec96dd-6048-46b4-9be0-08b46043879e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GraphicsCore\Common">
+      <UniqueIdentifier>{390b0548-d640-457f-9290-28fa45021a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GraphicsCore\DXSample">
+      <UniqueIdentifier>{10e68b4a-8a80-4fcb-9348-f2a49f67400e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\PipelineState">
+      <UniqueIdentifier>{c0849f6f-4954-4905-ba3d-bd035c30ba15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Descriptors\UserDescriptorHeap">
+      <UniqueIdentifier>{264c2a47-63fa-43db-af23-ca6013cda317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Resources\LinearAllocator">
+      <UniqueIdentifier>{b8671ca5-92c2-4db6-b3c5-4e9813865e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\Signatures">
+      <UniqueIdentifier>{cb224245-3d98-49c0-9c07-7264c8d39c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Descriptors\DynamicDescriptorHeap%28ShaderVisible%29">
+      <UniqueIdentifier>{10f33b11-3d73-43e6-8c93-1f8ba8fe5b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\GPUResource\Descriptors\DescriptorAllocator%28NonShaderVisible%29">
+      <UniqueIdentifier>{0fc3952b-dbd7-468f-a1bb-f1627793e609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\CommandManager\CommandListManager">
+      <UniqueIdentifier>{e5fa8596-70af-495c-81ed-98db9d4e52d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\CommandManager\CommandQueueManager">
+      <UniqueIdentifier>{808f38d0-a467-4c9d-8702-925367b8fdc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsCore\Pipeline\CommandManager\CommandAllocatorPool">
+      <UniqueIdentifier>{4d1f6909-fdb9-4421-a1a1-22c46aebf69c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ByteAddressBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadbackBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="StructuredBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="TypedBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAllocator.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\LinearAllocator</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAllocatorPagePool.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\LinearAllocator</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoader.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandList.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandListManager.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandQueue.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandQueueManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandQueueManager.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandQueueManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandManager.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraBasic.cpp">
+      <Filter>SceneAndObjects\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraWalkthrough.cpp">
+      <Filter>SceneAndObjects\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx12.cpp">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiManager.cpp">
+      <Filter>GraphicsCore\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleColorBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleDepthBuffer.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelH3D.cpp">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelSDF.cpp">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInstance.cpp">
+      <Filter>SceneAndObjects\Models\ModelInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInstanceLibrary.cpp">
+      <Filter>SceneAndObjects\Models\ModelInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonConfigImporter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneImporter.cpp">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryGenerator.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuTimeManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassManager.cpp">
+      <Filter>SceneAndObjects\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonConfigExporter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneExporter.cpp">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneForwardRender.cpp">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGBufferRender.cpp">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGeometryOnlyRender.cpp">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLightDeferredRender.cpp">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingFrustum.cpp">
+      <Filter>SceneAndObjects\Boundings</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuResource.cpp">
+      <Filter>GraphicsCore\GPUResource\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="DescriptorAllocator.cpp">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DescriptorAllocator%28NonShaderVisible%29</Filter>
+    </ClCompile>
+    <ClCompile Include="DescriptorAllocatorExplorer.cpp">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DescriptorAllocator%28NonShaderVisible%29</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicDescriptorHeap.cpp">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DynamicDescriptorHeap%28ShaderVisible%29</Filter>
+    </ClCompile>
+    <ClCompile Include="SwappedUserDescriptorHeap.cpp">
+      <Filter>GraphicsCore\GPUResource\Descriptors\UserDescriptorHeap</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDescriptorHeap.cpp">
+      <Filter>GraphicsCore\GPUResource\Descriptors\UserDescriptorHeap</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsCore.cpp">
+      <Filter>GraphicsCore\GraphicsCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsCommon.cpp">
+      <Filter>GraphicsCore\GraphicsCore\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SamplerDesc.cpp">
+      <Filter>GraphicsCore\GraphicsCore\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DXSample.cpp">
+      <Filter>GraphicsCore\GraphicsCore\DXSample</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineState.cpp">
+      <Filter>GraphicsCore\Pipeline\PipelineState</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandSignature.cpp">
+      <Filter>GraphicsCore\Pipeline\Signatures</Filter>
+    </ClCompile>
+    <ClCompile Include="RootSignature.cpp">
+      <Filter>GraphicsCore\Pipeline\Signatures</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandAllocatorPool.cpp">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandAllocatorPool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DescriptorHandle.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteAddressBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="IndirectArgsBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadbackBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="StructuredBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="TypedBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAllocationPage.h">
+      <Filter>GraphicsCore\GPUResource\Resources\LinearAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAllocator.h">
+      <Filter>GraphicsCore\GPUResource\Resources\LinearAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAllocatorPagePool.h">
+      <Filter>GraphicsCore\GPUResource\Resources\LinearAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>GraphicsCore\GPUResource\Resources\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoader.h">
+      <Filter>GraphicsCore\GPUResource\Resources\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandList.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandListManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandListManager.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandListManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandQueue.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandQueueManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandQueueManager.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandQueueManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandManager.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="dds.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="StepTimer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraBasic.h">
+      <Filter>SceneAndObjects\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraWalkthrough.h">
+      <Filter>SceneAndObjects\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx12.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiManager.h">
+      <Filter>GraphicsCore\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>GraphicsCore\GUI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleColorBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleDepthBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\PixelBuffer\DepthBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleBuffer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelSDF.h">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>SceneAndObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>SceneAndObjects\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInstance.h">
+      <Filter>SceneAndObjects\Models\ModelInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInstanceLibrary.h">
+      <Filter>SceneAndObjects\Models\ModelInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D12Base.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Base.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonConfigImporter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneImporter.h">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCommon.h">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TripleUploadBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.h">
+      <Filter>GraphicsCore\GPUResource\Resources\GPUBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLibrary.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryGenerator.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuTimeManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassManager.h">
+      <Filter>SceneAndObjects\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonConfigExporter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneExporter.h">
+      <Filter>SceneAndObjects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneForwardRender.h">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGBufferRender.h">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SDFSceneRender.h">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGeometryOnlyRender.h">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLightDeferredRender.h">
+      <Filter>SceneAndObjects\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommon.h">
+      <Filter>SceneAndObjects\Render\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObject.h">
+      <Filter>SceneAndObjects\Boundings</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingFrustum.h">
+      <Filter>SceneAndObjects\Boundings</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuResource.h">
+      <Filter>GraphicsCore\GPUResource\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="DescriptorAllocator.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DescriptorAllocator%28NonShaderVisible%29</Filter>
+    </ClInclude>
+    <ClInclude Include="DescriptorAllocatorExplorer.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DescriptorAllocator%28NonShaderVisible%29</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicDescriptorHeap.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors\DynamicDescriptorHeap%28ShaderVisible%29</Filter>
+    </ClInclude>
+    <ClInclude Include="SwappedUserDescriptorHeap.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors\UserDescriptorHeap</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDescriptorHeap.h">
+      <Filter>GraphicsCore\GPUResource\Descriptors\UserDescriptorHeap</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsCore.h">
+      <Filter>GraphicsCore\GraphicsCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsCommon.h">
+      <Filter>GraphicsCore\GraphicsCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsCoreBase.h">
+      <Filter>GraphicsCore\GraphicsCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplerDesc.h">
+      <Filter>GraphicsCore\GraphicsCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DXSample.h">
+      <Filter>GraphicsCore\GraphicsCore\DXSample</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineState.h">
+      <Filter>GraphicsCore\Pipeline\PipelineState</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandSignature.h">
+      <Filter>GraphicsCore\Pipeline\Signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="RootSignature.h">
+      <Filter>GraphicsCore\Pipeline\Signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandAllocatorPool.h">
+      <Filter>GraphicsCore\Pipeline\CommandManager\CommandAllocatorPool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShaderUtility\VectorEncodeUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\CrossBilateralWeights.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\LightingUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\MathUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\VertexUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="ShaderUtility\VisibilityBufferUtil.hlsl">
+      <Filter>ShaderUtility</Filter>
+    </None>
+    <None Include="SDFSceneRender.cpp">
+      <Filter>SceneAndObjects\Render</Filter>
+    </None>
+    <None Include="ShaderUtility\SceneGBufferRenderUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="ShaderUtility\SceneLightDeferredRenderUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="ShaderUtility\SDFSceneRenderUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="ShaderUtility\SceneForwardRenderUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="ShaderUtility\RenderCommonUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="ShaderUtility\SceneGeometryOnlyRenderUtil.hlsl">
+      <Filter>ShaderUtility\SceneRender</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\GenerateGrassStrawsCS.hlsl">
+      <Filter>SceneAndObjects\Grass\Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

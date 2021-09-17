@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{58A2F502-79CC-44C2-A399-3D7C254692E9}</ProjectGuid>
+    <RootNamespace>Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundingFrustum.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="SceneLightDeferredRender.cpp" />
+    <ClCompile Include="GeometryGenerator.cpp" />
+    <ClCompile Include="GpuTimeManager.cpp" />
+    <ClCompile Include="GrassManager.cpp" />
+    <ClCompile Include="JsonConfigExporter.cpp" />
+    <ClCompile Include="SceneExporter.cpp" />
+    <ClCompile Include="SceneGeometryOnlyRender.cpp" />
+    <ClCompile Include="JsonConfigImporter.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="ModelInstance.cpp" />
+    <ClCompile Include="ModelInstanceLibrary.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="ModelSDF.cpp" />
+    <ClCompile Include="ByteAddressBuffer.cpp" />
+    <ClCompile Include="CameraBasic.cpp" />
+    <ClCompile Include="CameraWalkthrough.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorBuffer.cpp" />
+    <ClCompile Include="CommandAllocatorPool.cpp" />
+    <ClCompile Include="CommandList.cpp" />
+    <ClCompile Include="CommandListManager.cpp" />
+    <ClCompile Include="CommandManager.cpp" />
+    <ClCompile Include="CommandQueue.cpp" />
+    <ClCompile Include="CommandQueueManager.cpp" />
+    <ClCompile Include="CommandSignature.cpp" />
+    <ClCompile Include="DoubleColorBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DoubleDepthBuffer.cpp" />
+    <ClCompile Include="GpuResource.cpp" />
+    <ClCompile Include="GuiManager.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx12.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneImporter.cpp" />
+    <ClCompile Include="SceneGBufferRender.cpp" />
+    <ClCompile Include="SceneForwardRender.cpp" />
+    <None Include="SDFSceneRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </None>
+    <ClCompile Include="SwappedUserDescriptorHeap.cpp" />
+    <ClCompile Include="UploadBuffer.cpp" />
+    <ClCompile Include="DDSTextureLoader.cpp" />
+    <ClCompile Include="DepthBuffer.cpp" />
+    <ClCompile Include="DescriptorAllocator.cpp" />
+    <ClCompile Include="DescriptorAllocatorExplorer.cpp" />
+    <ClCompile Include="DXSample.cpp" />
+    <ClCompile Include="DynamicDescriptorHeap.cpp" />
+    <ClCompile Include="FileUtility.cpp" />
+    <ClCompile Include="GpuBuffer.cpp" />
+    <ClCompile Include="GraphicsCommon.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GraphicsCore.cpp" />
+    <ClCompile Include="LinearAllocator.cpp" />
+    <ClCompile Include="LinearAllocatorPagePool.cpp" />
+    <ClCompile Include="MathUtility.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelH3D.cpp" />
+    <ClCompile Include="PipelineState.cpp" />
+    <ClCompile Include="PixelBuffer.cpp" />
+    <ClCompile Include="ReadbackBuffer.cpp" />
+    <ClCompile Include="RootSignature.cpp" />
+    <ClCompile Include="SamplerDesc.cpp" />
+    <ClCompile Include="ShadowBuffer.cpp" />
+    <ClCompile Include="StructuredBuffer.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureLoader.cpp" />
+    <ClCompile Include="TypedBuffer.cpp" />
+    <ClCompile Include="UserDescriptorHeap.cpp" />
+    <ClCompile Include="Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoundingFrustum.h" />
+    <ClInclude Include="BoundingObject.h" />
+    <ClInclude Include="ConstantBuffer.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="GeometryGenerator.h" />
+    <ClInclude Include="GpuTimeManager.h" />
+    <ClInclude Include="GrassManager.h" />
+    <ClInclude Include="JsonConfigExporter.h" />
+    <ClInclude Include="RenderCommon.h" />
+    <ClInclude Include="SceneLightDeferredRender.h" />
+    <ClInclude Include="SceneExporter.h" />
+    <ClInclude Include="SceneGeometryOnlyRender.h" />
+    <ClInclude Include="JsonConfigImporter.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="ModelInstanceLibrary.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="ModelSDF.h" />
+    <ClInclude Include="ByteAddressBuffer.h" />
+    <ClInclude Include="CameraBasic.h" />
+    <ClInclude Include="CameraWalkthrough.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorBuffer.h" />
+    <ClInclude Include="CommandAllocatorPool.h" />
+    <ClInclude Include="CommandList.h" />
+    <ClInclude Include="CommandListManager.h" />
+    <ClInclude Include="CommandManager.h" />
+    <ClInclude Include="CommandQueue.h" />
+    <ClInclude Include="CommandQueueManager.h" />
+    <ClInclude Include="CommandSignature.h" />
+    <ClInclude Include="D3D12Base.h" />
+    <ClInclude Include="DoubleBuffer.h" />
+    <ClInclude Include="DoubleColorBuffer.h" />
+    <ClInclude Include="DoubleDepthBuffer.h" />
+    <ClInclude Include="GuiManager.h" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx12.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="MathUtility.h" />
+    <ClInclude Include="ModelInstance.h" />
+    <ClInclude Include="ObjectLibrary.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneImporter.h" />
+    <ClInclude Include="SceneGBufferRender.h" />
+    <ClInclude Include="SceneForwardRender.h" />
+    <ClInclude Include="SceneCommon.h" />
+    <ClInclude Include="SDFSceneRender.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SwappedUserDescriptorHeap.h" />
+    <ClInclude Include="TripleUploadBuffer.h" />
+    <ClInclude Include="Win32Base.h" />
+    <ClInclude Include="UploadBuffer.h" />
+    <ClInclude Include="d3dx12.h" />
+    <ClInclude Include="dds.h" />
+    <ClInclude Include="DDSTextureLoader.h" />
+    <ClInclude Include="DepthBuffer.h" />
+    <ClInclude Include="DescriptorAllocator.h" />
+    <ClInclude Include="DescriptorAllocatorExplorer.h" />
+    <ClInclude Include="DescriptorHandle.h" />
+    <ClInclude Include="DXSample.h" />
+    <ClInclude Include="DynamicDescriptorHeap.h" />
+    <ClInclude Include="FileUtility.h" />
+    <ClInclude Include="GpuBuffer.h" />
+    <ClInclude Include="GpuResource.h" />
+    <ClInclude Include="GraphicsCommon.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GraphicsCore.h" />
+    <ClInclude Include="Hash.h" />
+    <ClInclude Include="IndirectArgsBuffer.h" />
+    <ClInclude Include="LinearAllocationPage.h" />
+    <ClInclude Include="LinearAllocator.h" />
+    <ClInclude Include="LinearAllocatorPagePool.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="GraphicsCoreBase.h" />
+    <ClInclude Include="PipelineState.h" />
+    <ClInclude Include="PixelBuffer.h" />
+    <ClInclude Include="ReadbackBuffer.h" />
+    <ClInclude Include="RootSignature.h" />
+    <ClInclude Include="SamplerDesc.h" />
+    <ClInclude Include="ShadowBuffer.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="StructuredBuffer.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureLoader.h" />
+    <ClInclude Include="TypedBuffer.h" />
+    <ClInclude Include="UserDescriptorHeap.h" />
+    <ClInclude Include="Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShaderUtility\VertexUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <FxCompile Include="Shader\GenerateGrassStrawsCS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.1</ShaderModel>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">g_p%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompiledShaders\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompiledShaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.1</ShaderModel>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">g_p%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompiledShaders\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompiledShaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <None Include="ShaderUtility\CrossBilateralWeights.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="ShaderUtility\VisibilityBufferUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\SceneLightDeferredRenderUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\LightingUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\SceneGBufferRenderUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\VectorEncodeUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="ShaderUtility\MathUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\RenderCommonUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="ShaderUtility\SceneForwardRenderUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\SDFSceneRenderUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ShaderUtility\SceneGeometryOnlyRenderUtil.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\packages\rapidjson.1.0.2\build\native\rapidjson.targets" Condition="Exists('..\..\packages\rapidjson.1.0.2\build\native\rapidjson.targets')" />
+    <Import Project="..\..\packages\zlib-vc140-static-64.1.2.11\build\native\zlib-vc140-static-64.targets" Condition="Exists('..\..\packages\zlib-vc140-static-64.1.2.11\build\native\zlib-vc140-static-64.targets')" />
+    <Import Project="..\..\packages\WinPixEventRuntime.1.0.180612001\build\WinPixEventRuntime.targets" Condition="Exists('..\..\packages\WinPixEventRuntime.1.0.180612001\build\WinPixEventRuntime.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\rapidjson.1.0.2\build\native\rapidjson.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\rapidjson.1.0.2\build\native\rapidjson.targets'))" />
+    <Error Condition="!Exists('..\..\packages\zlib-vc140-static-64.1.2.11\build\native\zlib-vc140-static-64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\zlib-vc140-static-64.1.2.11\build\native\zlib-vc140-static-64.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WinPixEventRuntime.1.0.180612001\build\WinPixEventRuntime.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WinPixEventRuntime.1.0.180612001\build\WinPixEventRuntime.targets'))" />
+  </Target>
+</Project>

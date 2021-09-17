@@ -1,0 +1,130 @@
+{
+    "models": 
+        [
+            {
+                "name": "duck",
+				"type": "basic",
+                "file": "duck.h3d",
+                "instances":
+                [
+                    {
+                        "name": "duck1",
+                        "pos": [0.0, 0.0, -10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    },
+
+					{
+                        "name": "duck2",
+                        "pos": [0.0, 10.0, -10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    },
+
+                    {
+                        "name": "duck3",
+                        "pos": [0.0, 0.0, 10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    }, 
+
+					{
+                        "name": "duck4",
+                        "pos": [0.0, 15.0, 10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    },
+
+					{
+                        "name": "duck5",
+                        "pos": [15.0, 0.0, 10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    }
+                ]
+            },
+
+            {
+                "name": "flower",
+				"type": "basic",
+                "file": "flower1.h3d",
+                "instances":
+                [
+                    {
+                        "name": "flower1",
+                        "pos": [-10.0, 0.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.15
+                    },
+
+                    {
+                        "name": "flower2",
+                        "pos": [10.0, 0.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.2
+                    },
+
+					{
+                        "name": "flower3",
+                        "pos": [10.0, 0.0, 10.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.2
+                    },
+
+					{
+                        "name": "flower4",
+                        "pos": [10.0, -10.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.2
+                    },
+
+					{
+                        "name": "flower5",
+                        "pos": [10.0, 10.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.2
+                    }
+                ]
+            }
+        ],
+
+    "lights": 
+        [
+            {
+                "name": "dirLight1",
+                "type": "directional",
+                "dir": [0.57735, -0.57735, 0.57735],
+                "intensity": [0.8, 0.8, 0.8]
+            },
+
+            {
+                "name": "dirLight2",
+                "type": "directional",
+                "dir": [-0.57735, -0.57735, 0.57735],
+                "intensity": [0.6, 0.6, 0.6]
+            },
+            
+            {
+                "name": "dirLight3",
+                "type": "directional",
+                "dir": [0.0, -0.707, -0.707],
+                "intensity": [0.5, 0.5, 0.5]
+            }
+        ],
+
+    "cameras": 
+        [
+            {
+                "name": "camera0",
+                "type": "walkthrough",
+                "pos": [0.0, 0.0, -10.0],
+                "target": [0.0, 0.0, 0.0],
+                "up": [0.0, 1.0, 0.0],
+                "fovy": 45,
+                "zn": 0.1,
+                "zf": 1000.0,
+                "move_speed": 0.5,
+                "rotate_speed": 0.0025
+            }
+        ]  
+}

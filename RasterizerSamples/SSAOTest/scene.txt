@@ -1,0 +1,35 @@
+{
+    "models": 
+        [
+            {
+                "name": "house",
+				"type": "basic",
+                "file": "room1.h3d",
+                "instances":
+                [
+                    {
+                        "name": "street",
+                        "pos": [0.0, 0.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 1.0
+                    }
+                ]
+            }
+        ],
+
+    "cameras": 
+        [
+            {
+                "name": "camera0",
+                "type": "walkthrough",
+                "pos": [-64.75, 98.67, 11.47],
+                "target": [80.0, 50.0, -100.0],
+                "up": [0.0, 1.0, 0.0],
+                "fovy": 45,
+                "zn": 0.1,
+                "zf": 1500.0,
+                "move_speed": 1.0,
+                "rotate_speed": 0.0025
+            }
+        ]   
+}

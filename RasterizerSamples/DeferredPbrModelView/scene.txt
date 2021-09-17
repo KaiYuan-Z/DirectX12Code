@@ -1,0 +1,88 @@
+{
+    "models": 
+        [
+            {
+                "name": "house",
+				"type": "basic",
+                "file": "house.h3d",
+                "instances":
+                [
+                    {
+                        "name": "house1",
+                        "pos": [0.0, 0.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 0.1
+                    }
+                ]
+            },
+
+			{
+                "name": "sphere",
+				"type": "basic",
+                "file": "sphere.h3d",
+                "instances":
+                [
+                    {
+                        "name": "light1",
+                        "pos": [0.0, 50.0, 0.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 1.0
+                    }, 
+
+					{
+                        "name": "light2",
+                        "pos": [-25.0, 50.0, 25.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 1.0
+                    },
+
+					{
+                        "name": "light3",
+                        "pos": [25.0, 50.0, -25.0],
+                        "yaw_pitch_roll": [0.0, 0.0, 0.0],
+                        "scale": 1.0
+                    }
+                ]
+            }
+        ],
+
+    "lights": 
+        [
+            {
+                "name": "pointLight1",
+                "type": "point",
+                "pos": [0.0, 50.0, 0.0],
+                "intensity": [10000.0, 10000.0, 10000.0]
+            },
+
+            {
+                "name": "pointLight2",
+                "type": "point",
+                "pos": [-25.0, 50.0, 25.0],
+                "intensity": [10000.0, 10000.0, 10000.0]
+            },
+            
+            {
+                "name": "pointLight3",
+                "type": "point",
+                "pos": [25.0, 50.0, -25.0],
+                "intensity": [10000.0, 10000.0, 10000.0]
+            }
+        ],
+
+    "cameras": 
+        [
+            {
+                "name": "camera0",
+                "type": "walkthrough",
+                "pos": [-10.4312, 17.5559, -28.534],
+                "target": [-7.18113, 12.422, -20.5917],
+                "up": [0.194436, 0.858154, 0.475148],
+                "fovy": 45,
+                "zn": 0.1,
+                "zf": 1000.0,
+                "move_speed": 0.5,
+                "rotate_speed": 0.0025
+            }
+        ]  
+}
