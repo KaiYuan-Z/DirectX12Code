@@ -78,7 +78,7 @@
 
 <br>
 
-* AtrousWaveletTransfromBlurEffect：参考了SVGF的第一趟滤波。做实时光追AO时，感觉Value Based Weight（用来避免Sharp Value被过度Blur）对AO来说作用不大，暂时把Value Based Weight去掉了(去掉了Value Based Weight，感觉Blur算法的名字将来也得换换，暂时还没来得及改)，这样还省得算方差了。未来其他算法有需要Value Based Weight的话还会加回来，然后为AO但写一个不带Value Based Weight的。
+* AtrousWaveletTransfromBlurEffect：参考了SVGF的第一趟滤波。做实时光追AO时，感觉Value Based Weight（用来避免Sharp Value被过度Blur）对AO来说作用不大，暂时把Value Based Weight去掉了(去掉了Value Based Weight，感觉Blur算法的名字将来也得换换，暂时还没来得及改)，这样还省得算方差了。未来其他算法有需要Value Based Weight的话还会加回来，然后为AO单写一个不带Value Based Weight的。
 
 <br>
 
