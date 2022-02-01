@@ -11,7 +11,8 @@ void CUserDescriptorHeap::Create( ID3D12Device* pDevice, D3D12_DESCRIPTOR_HEAP_T
 	m_pDevice = pDevice;
 	m_HeapDesc.NumDescriptors = MaxCount;
 	m_HeapDesc.Type = Type;
-	m_HeapDesc.Flags = ((Type == D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV) || (Type == D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER)) ? D3D12_DESCRIPTOR_HEAP_FLAG_SHADER_VISIBLE : D3D12_DESCRIPTOR_HEAP_FLAG_NONE;
+    const bool ShaderVisible = (Type == D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV) || (Type == D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER);
+	m_HeapDesc.Flags = ShaderVisible ? D3D12_DESCRIPTOR_HEAP_FLAG_SHADER_VISIBLE : D3D12_DESCRIPTOR_HEAP_FLAG_NONE;
 	m_HeapDesc.NodeMask = 1;
 	ASSERT_SUCCEEDED(m_pDevice->CreateDescriptorHeap(&m_HeapDesc, MY_IID_PPV_ARGS(m_Heap.ReleaseAndGetAddressOf())));
 
@@ -23,7 +24,14 @@ void CUserDescriptorHeap::Create( ID3D12Device* pDevice, D3D12_DESCRIPTOR_HEAP_T
 
     m_DescriptorSize = m_pDevice->GetDescriptorHandleIncrementSize(m_HeapDesc.Type);
     m_NumFreeDescriptors = m_HeapDesc.NumDescriptors;
-    m_FirstHandle = CDescriptorHandle( m_Heap->GetCPUDescriptorHandleForHeapStart(),  m_Heap->GetGPUDescriptorHandleForHeapStart() );
+	if(ShaderVisible)
+	{
+		m_FirstHandle = CDescriptorHandle(m_Heap->GetCPUDescriptorHandleForHeapStart(), m_Heap->GetGPUDescriptorHandleForHeapStart());
+	}
+	else
+	{
+		m_FirstHandle = CDescriptorHandle(m_Heap->GetCPUDescriptorHandleForHeapStart());
+	}
     m_NextFreeHandle = m_FirstHandle;
 }
 
