@@ -166,9 +166,9 @@ RaytracingUtility的代码主要包含RaytracingAccelerationStructure、Raytraci
 
 #### 2.2.2 RaytracingScene
 * RaytracingScene: <br>
-（1）由于光追光线需要使用加速结构来进行光线求交，因此RaytracingScene在初始化时，会自动为每个Model都建立一个BLA，并基于这些BLAs和所有Instances为场景建立TLA。
-（2）在传统的光栅管线中，一般每次绘制只需将一个Model及其对应Instances的数据到管线。而到了光追管线，由于在光追时一根光线可以打到场景中的任何物体，因此相关的Shader在光追时必须能够获取到整个场景的任何数据。RaytracingScene做为Scene的光追扩展，它会收集场景里的Model数据、Instance数据、Light数据等，并将这些数据汇总成一个个总的GPU Buffer，以便供给光追Shader使用。<br>
-（3）由**“ 1.3 Shader Table ”**的有关介绍可知，场景中的每个Instance都要有与其对应的Hit Group Shader Records（注：一个Instance要对应有 InstanceGeometryCount * G<sub>mult</sub> 条Shader Record）。所以RaytracingScene提供了自动为场景中所有Instance建立对应Hit Group Shader Records的功能，而Instance、Geometry、HitProgType与Hit Group Shader Record的具体映射关系可参看 **“ 1.3 Shader Table ”** 。<br>
+（1）由于光追光线需要使用加速结构来进行光线求交，因此RaytracingScene在初始化时，会自动为每个Model都建立一个BLA，并基于这些BLAs和所有Instances为场景建立TLA。 <br>
+（2）在传统的光栅管线中，一般每次绘制只需将一个Model及其对应Instances的数据到管线。而到了光追管线，由于在光追时一根光线可以打到场景中的任何物体，因此相关的Shader在光追时必须能够获取到整个场景的任何数据。RaytracingScene做为Scene的光追扩展，它会收集场景里的Model数据、Instance数据、Light数据等，并将这些数据汇总成一个个总的GPU Buffer，以便供给光追Shader使用。 <br>
+（3）由 __“ 1.3 Shader Table ”__ 的有关介绍可知，场景中的每个Instance都要有与其对应的Hit Group Shader Records（注：一个Instance要对应有 InstanceGeometryCount * G<sub>mult</sub> 条Shader Record）。所以RaytracingScene提供了自动为场景中所有Instance建立对应Hit Group Shader Records的功能，而Instance、Geometry、HitProgType与Hit Group Shader Record的具体映射关系可参看 __“ 1.3 Shader Table ”__ 。 <br>
 
 * RaytracingSceneRenderHelper：<br>
 （1）负责配置场景渲染所需的Root Parameter。<br>
